@@ -60,6 +60,8 @@ def search():
             print("VALID NAME ENTERED")
             print("..................")
             print("LOADING LOAN DEATAILS")
+            for i in range(6, 0, -1):
+                time.sleep(1)
             print("..................")
             print("Loan details:")
             for key, value in loan.items():
@@ -69,11 +71,17 @@ def search():
     
     if not found:
         print("INVALID NAME, PLEASE TRY AGAIN")
+    print("returing to main menue in:")
+    for i in range(5, 0, -1):
+        time.sleep(1)
+        print(f"{i}")
+
     menue()
 
 def update():
     print("..................")
     print("WHAT DATA WOULD YOU LIKE TO UDATE TODAY: ")
+    print()
     name = input("ENTER USER NAME HERE: ")
     
     student_found = False
@@ -82,7 +90,7 @@ def update():
             student_found = True
             print(f"STUDENT {name} FOUND, WHAT WOULD YOU LIKE TO UPDATE?")
             print("1. DEVICE TYPE")
-            print("2.DEVICE ID")
+            print("2. DEVICE ID")
             print("3. DATE OUT")
             print("4. DUE BACK")
             print("5. RETUREND SUFICENTLY")
@@ -111,6 +119,11 @@ def update():
     
     if not student_found:
         print("STUDENT NAME NOT FOUND, TRY AGAIN")
+    print("returing to main menue in:")
+    for i in range(5, 0, -1):
+        time.sleep(1)
+        print(f"{i}")
+
     menue()
     
 def delete():
@@ -138,17 +151,43 @@ def delete():
     
     if not student_found:
         print("USER NOT FOUND. PLEASE TRY AGAIN.")
+    print("returing to main menue in:")
+    for i in range(5, 0, -1):
+        time.sleep(1)
+        print(f"{i}")
+
     menue()
 def add():
-    print("..................")
-    loans.append = student_name = input("ENTER THE NAME OF THE STUDENT: ")
-    loans.append = student_id = input("ENTER THE NEW STUDENTS ID: ")
-    loans.append = device_type = input("ENTER THE NEW DEVICE TYPE: ")
-    loans.append = device_id = input("ENTER THE NEW DEVICE ID: ")
-    loans.append = date_out = input("ENTER THE DATE THE DEVICE WAS GIVEN OUT: ")
-    loans.append = due_back = input("ENTER TGE DATE THE DEVICE IS DUE BACK: ")
-    loans.append = returned = input("IS THE DEVICE IN YOUR POSSESION: ")
+    print("---------------")
+
+    student_name = input("ENTER THE NAME OF THE STUDENT: ")
+    student_id = input("ENTER THE NEW STUDENT'S ID: ")
+    device_type = input("ENTER THE NEW DEVICE TYPE: ")
+    device_id = input("ENTER THE NEW DEVICE ID: ")
+    date_out = input("ENTER THE DATE THE DEVICE WAS GIVEN OUT: ")
+    due_back = input("ENTER THE DATE THE DEVICE IS DUE BACK: ")
+    returned = input("IS THE DEVICE IN YOUR POSSESSION (yes/no): ")
+
+    loan_record = {
+        "student_name": student_name,
+        "student_id": student_id,
+        "device_type": device_type,
+        "device_id": device_id,
+        "date_out": date_out,
+        "due_back": due_back,
+        "returned": returned
+    }
+
+    loans.append(loan_record)
+
     print("DATA STORED")
+    print(loan_record)
+    print("returing to main menue in:")
+    for i in range(5, 0, -1):
+        time.sleep(1)
+        print(f"{i}")
+
+
     menue()
     
 menue()
