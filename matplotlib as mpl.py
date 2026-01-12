@@ -1,16 +1,25 @@
-import matplotlib.pyplot as mpl
+import matplotlib.pyplot as plt
 import numpy as np
 
+plt.style.use("dark_background")
 
-x = np.array[90, 50, 40, 70, 69]
-y = np.array[2, 4, 6, 8, 10]
-mpl.scatter(x,y)
+years = np.array([2020, 2021, 2022, 2023])
 
-x = np.array[45, 23, 56, 78, 21, 89]
-y = np.array[34, 56 ,89 ,23 ,21]
-mpl.scatter(x, y)
+porsche_sales = np.array([0.27, 0.30, 0.31, 0.32])   
+nissan_sales = np.array([4.0, 3.8, 3.4, 3.6])       
 
-mpl.xlabel("area of car lot")
-mpl.ylabel("number of cars")
+plt.subplot(1, 2, 1)
+plt.plot(years, porsche_sales, color="cyan", marker="o", linewidth=2)
+plt.xlabel("Year")
+plt.ylabel("Cars Sold (millions)")
+plt.title("Porsche")
 
-mpl.show()
+plt.subplot(1, 2, 2)
+plt.plot(years, nissan_sales, color="magenta", marker="s", linewidth=2)
+plt.xlabel("Year")
+plt.ylabel("Cars Sold (millions)")
+plt.title("Nissan")
+
+plt.suptitle("Global Car Sales", fontsize=14)
+plt.tight_layout()
+plt.show()
