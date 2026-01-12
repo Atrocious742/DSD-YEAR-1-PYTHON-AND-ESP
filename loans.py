@@ -73,8 +73,8 @@ def search():
         print("INVALID NAME, PLEASE TRY AGAIN")
     print("returing to main menue in:")
     for i in range(5, 0, -1):
-        time.sleep(1)
-        print(f"{i}")
+        time.sleep(i)
+        print(i)
 
     menue()
 
