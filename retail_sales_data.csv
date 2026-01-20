@@ -1,0 +1,22 @@
+date,product,category,quantity,price,payment_method
+2025-01-01,T-Shirt,Clothing,3,12.99,Card
+2025-01-01,Jeans,Clothing,2,39.99,Card
+2025-01-01,Chocolate Bar,Food,10,1.5,Cash
+2025-01-02,Coffee,Food,6,2.99,Cash
+2025-01-02,Headphones,Electronics,1,59.99,Card
+2025-01-02,Notebook,Stationery,5,2.49,Card
+2025-01-03,T-Shirt,Clothing,4,12.99,Online
+2025-01-03,Jeans,Clothing,1,39.99,Card
+2025-01-03,Chocolate Bar,Food,8,1.5,Cash
+2025-01-04,Coffee,Food,7,2.99,Cash
+2025-01-04,Notebook,Stationery,6,2.49,Card
+2025-01-04,USB Cable,Electronics,3,5.99,Online
+2025-01-05,T-Shirt,Clothing,2,12.99,Card
+2025-01-05,Headphones,Electronics,2,59.99,Online
+2025-01-05,Chocolate Bar,Food,12,1.5,Cash
+2025-01-06,Coffee,Food,9,2.99,Cash
+2025-01-06,Jeans,Clothing,1,39.99,Card
+2025-01-06,Notebook,Stationery,4,2.49,Card
+2025-01-07,USB Cable,Electronics,5,5.99,Online
+2025-01-07,T-Shirt,Clothing,3,12.99,Card
+2025-01-07,Coffee,Food,8,2.99,Cash
