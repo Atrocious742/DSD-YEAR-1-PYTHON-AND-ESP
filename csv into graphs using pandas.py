@@ -41,6 +41,7 @@ plt.show()
 sales_by_category = df.groupby("category")["total_sales"].sum()
 
 # Plot pie chart
+plt.subplot(1, 2, 1)
 plt.figure(figsize=(7, 7))
 plt.pie(
     sales_by_category,
