@@ -37,10 +37,15 @@ plt.tight_layout()
 plt.show()
 
 #scatter of discount and quantity sold
-plt.figure(figsize=(10, 6))
-plt.scatter(df['discount_percent'], df['quantity_sold'], color='purple')
-plt.title('Discount vs Quantity Sold')
-plt.xlabel('Discount')
-plt.ylabel('Quantity Sold')
+
+plt.figure(figsize=(8, 5))
+plt.scatter(
+    df["discounted_price"],
+    df["total_revenue"],
+    s=10
+)
+plt.title("Discounted Price vs Revenue Relationship")
+plt.xlabel("discounted_price")
+plt.ylabel("total_revenue")
 plt.tight_layout()
 plt.show()
